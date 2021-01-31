@@ -3,3 +3,4 @@ Made a simple website for my friend and took a day to do this and did this to pr
 His dream site and products
 A practice website for responsive design 
 Also doing navbar and flexbox more
+First time I shared a link to a website I made 
