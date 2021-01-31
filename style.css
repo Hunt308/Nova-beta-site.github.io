@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+/*global */
+
+
+body{
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+}
+
+/*Navbar */
+
+#main-header img{
+    float: left;
+    margin: 15px;
+}
+
+#navbar{
+    float:right;
+    display: inline;
+}
+
+/* changing direction of the navbar is in ul, not li or a*/
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+/*list style goes here */
+
+#navbar li{
+    font-family: 'Nova Square';
+    padding: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    list-style: none;
+    background-color: black;
+    border: 5px solid #fff;
+
+}
+
+/*You get rid of the text decoration and links directly and colors here */
+
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#navbar .highlight a{
+    color: #800000;
+}
+
+#navbar a:hover{
+    color:#ccc;
+}
+
+
+/* Home page content */
+
+#main-content{
+    display: flex;
+    color: #fff;
+    line-height: 3.1em;
+    margin: 70px;
+    margin-top: 40px;
+    font-size: 22px;
+    background-color: black;
+    border: 5px solid #fff;
+    padding: 15px;
+}
+
+
+#main-content p{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Nova Square';
+
+}
+
+
+/* Project page content */
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: black;
+    border: 5px solid #fff;
+    padding: 15px;
+    padding-top: 25px;
+}
+
+#projects img{
+    margin: 25px;
+    border: 5px solid #ccc;
+}
+
+/*Products (still need titles) */ 
+
+#products{
+    display: flex;
+    flex-direction: row;
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: black;
+    border: 5px solid #fff;
+    padding: 15px;
+    padding-top: 40px;
+}
+
+
+#products img{
+    margin: 25px;
+    border: 5px solid #ccc;
+}
+
+#products p{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 80%;
+}
+
+
+/* Contact */
+
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: black;
+    border: 5px solid #fff;
+    padding: 15px;
+    padding-top: 40px;
+}
+
+#contact h2{
+    font-family: 'Nova Square';
+    color: #ccc;
+    text-align: center;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+
+}
+
+#contact p{
+    font-family: 'Nova Square';
+    line-height: 1.3em;
+    color: #ccc;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+
+/* Media Queries */
+
+
+
+
+
+@media (max-width: 1200px){
+    #navbar li {
+        padding: 10px;
+        margin-right: 5px;
+        margin: 0px 15px;
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 1200px){
+    #products img{
+        width: 200px;
+        height:200px;
+
+        
+    }
+}
+
+
+@media (max-width: 1024px){
+    #navbar li {
+        padding: 1px;
+        margin-right: 5px;
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 1024px){
+    #products img, #projects img{
+        width: 200px;
+        height:200px;
+
+        
+
+        
+    }
+}
+
+@media (max-width: 768px){
+    #products img, #projects img{
+        width: 150px;
+        height:150px;
+
+        
+    }
+}
+
+@media (max-width: 768px){
+    #navbar, #main-header img,
+    #navbar ul, #contact,
+    #products, #projects{
+        float: none;
+        flex-direction: column;
+        text-align: center;
+        display: block;
+        
+    }
+}
+
+
+
+@media(max-width:540px){
+    #contact p, #main-content p{
+        margin: 5px;
+        font-size: 14px;
+        padding: 18px;
+    }
+}
+
+
+@media(max-width:480px){
+    #contact p, #main-content p{
+        margin: 5px;
+        font-size: 9px;
+        padding: 18px;
+    }
+}
+
+
+
+@media(max-width:280px){
+    #contact p, #main-content p{
+        margin: 5px;
+        font-size: 5px;
+        padding: 18px;
+
+    }
+
+}
